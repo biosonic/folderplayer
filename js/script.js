@@ -82,17 +82,7 @@ $(function () {
                       useStateClassSkin: true,
                       audioFullScreen: false // Allows the audio poster to go full screen via keyboard
                     }
-            );
-            $('#jp_container_folder-player .minimize').click(function(e){
-              $('#jp_container_folder-player').toggleClass('minimal')
-              e.preventDefault();
-            });
-            $('#jp_container_folder-player .close').click(function(e){
-              e.preventDefault();
-              $("#jquery_jplayer_folder-player").jPlayer('destroy');
-              $('#jp_container_folder-player').remove();
-            });
-    
+            );  
   }
   
   
@@ -100,6 +90,15 @@ $(function () {
         
         if (!$("#jquery_jplayer_folder-player").length) {
           $('#header').append($(template));
+          $('#jp_container_folder-player .minimize').click(function(e){
+            $('#jp_container_folder-player').toggleClass('minimal')
+            e.preventDefault();
+          });
+          $('#jp_container_folder-player .close').click(function(e){
+            e.preventDefault();
+            $("#jquery_jplayer_folder-player").jPlayer('destroy');
+            $('#jp_container_folder-player').remove();
+          });
         }
         $("#jquery_jplayer_folder-player").jPlayer('destroy');
     
