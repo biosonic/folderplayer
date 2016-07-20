@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<info>
+    <id>folderplayer</id>
+    <name>Folder Player</name>
+    <description>This app collect media files from folder and plays them in player</description>
+    <licence>AGPL</licence>
+    <author>Aleksandar Veljkovic</author>
+    <version>0.0.1</version>
+    <namespace>FolderPlayer</namespace>
+    <category>other</category>
+    <dependencies>
+        <owncloud min-version="9.0" />
+    </dependencies>
+</info>
