@@ -104,10 +104,8 @@ $(function () {
     
         $.ajax({
         url: "/remote.php/webdav" + url,
-        //url: "http://cloud.street.rs/remote.php/webdav/",
         method: "PROPFIND",
         headers: {
-          //"Authorization": "Basic " + btoa(u + ":" + p),
           "X-Requested-With": "cUrl",
           "Depth": "infinity"
         },
@@ -121,7 +119,7 @@ $(function () {
               var regE = new RegExp("^\/remote.php\/webdav\/(.*)\/(.*)." + ext + "$", 'i');
               var regM = src.match(regE);
               songs.push({
-                mp3: "http://cloud.street.rs" + src,
+                mp3: src,
                 artist: decodeURIComponent(regM[1]),
                 title: decodeURIComponent(regM[2])
               });
@@ -151,26 +149,5 @@ $(function () {
 
 
 });
-        /*
-         
-         $(document).ready(function () {
-         $('#hello').click(function () {
-         alert('Hello from your script file');
-         });
-         
-         $('#echo').click(function () {
-         var url = OC.generateUrl('/apps/folderplayer/echo');
-         var data = {
-         echo: $('#echo-content').val()
-         };
-         
-         $.post(url, data).success(function (response) {
-         $('#echo-result').text(response.echo);
-         });
-         
-         });
-         });
-         
-         */
 
 })(jQuery, OC);
