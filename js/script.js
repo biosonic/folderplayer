@@ -59,11 +59,11 @@ $(function () {
       </div>\
     </div>\
   ';
-  
+
   var playerInit = function(songs){
-            
-    
-    
+
+
+
             var playlist = new jPlayerPlaylist(
                     {
                       jPlayer: "#jquery_jplayer_folder-player",
@@ -82,12 +82,12 @@ $(function () {
                       useStateClassSkin: true,
                       audioFullScreen: false // Allows the audio poster to go full screen via keyboard
                     }
-            );  
+            );
   }
-  
-  
+
+
   var init = function(url){
-        
+
         if (!$("#jquery_jplayer_folder-player").length) {
           $('#header').append($(template));
           $('#jp_container_folder-player .minimize').click(function(e){
@@ -101,9 +101,9 @@ $(function () {
           });
         }
         $("#jquery_jplayer_folder-player").jPlayer('destroy');
-    
+
         $.ajax({
-        url: "/remote.php/webdav" + url,
+        url: oc_webroot + "/remote.php/webdav" + url,
         method: "PROPFIND",
         headers: {
           "X-Requested-With": "cUrl",
@@ -116,7 +116,7 @@ $(function () {
             var src = o.innerHTML;
             var ext = src.split('.').pop();
             if (ext === "mp3") {
-              var regE = new RegExp("^\/remote.php\/webdav\/(.*)\/(.*)." + ext + "$", 'i');
+              var regE = new RegExp("^" + oc_webroot.replace('/', '\/') + "\/remote.php\/webdav\/(.*)\/(.*)." + ext + "$", 'i');
               var regM = src.match(regE);
               songs.push({
                 mp3: src,
@@ -128,20 +128,20 @@ $(function () {
 
           playerInit(songs);
 
-                  
+
         }
-        
-        
+
+
       });
   }
-  
-  
+
+
   try {
     OCA.Files.fileActions.register('all', 'Play', OC.PERMISSION_READ, OC.imagePath('core', 'actions/play'), function (fileName, fileObject) {
       var path = fileObject.dir+"/"+fileName;
       init(path);
     });
-  } 
+  }
   catch (e) {
   }
 
