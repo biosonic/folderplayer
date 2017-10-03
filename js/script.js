@@ -112,7 +112,7 @@ $(function () {
         contentType: "application/xml; charset=utf-8",
         success: function (response) {
           var songs = [];
-          $(response).find("response").find("href").each(function (i, o) {
+          $(response).find("d\\:response").find("d\\:href").each(function (i, o) {
             var src = o.innerHTML;
             var ext = src.split('.').pop();
             if (ext === "mp3") {
