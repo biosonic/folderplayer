@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>folderplayer</id>
+    <name>Folder Player</name>
+    <summary>This App collects media files from selected folder and put them in media player&#39;s play list.</summary>
+    <description><![CDATA[Usage:
+
+- install app
+- enable app
+- in FILEACTIONS MENU (3 dots to the right of the name, in file view) select PLAY
+enjoy]]></description>
+    <version>0.0.1</version>
+    <licence>agpl</licence>
+    <author mail="coa.develop@gmail.com" >Aleksandar Veljkoivic</author>
+    <namespace>FolderPlayer</namespace>
+    <category>multimedia</category>
+    <bugs>https://github.com/biosonic/folderplayer/issues</bugs>
+    <dependencies>
+        <nextcloud min-version="12" max-version="12"/>
+    </dependencies>
+    <navigations>
+        <navigation>
+            <name>Folder Player</name>
+            <route>folderplayer.page.index</route>
+        </navigation>
+    </navigations>
+</info>

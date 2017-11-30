@@ -1,0 +1,15 @@
+{
+    "name": "Folder Player",
+    "description": "This App collects media files from selected folder and put them in media player&#39;s play list.",
+    "type": "project",
+    "license": "AGPL",
+    "authors": [
+        {
+            "name": "Aleksandar Veljkoivic"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5.4"
+    }
+}
