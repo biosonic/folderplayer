@@ -1,7 +1,9 @@
 #jp_container_folder-player {
   padding-top: 8px;
-  z-index: 100;
-  float: right;
+  z-index: 9999;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
 
@@ -54,4 +56,4 @@
 }
 .players-top-bar a:focus {
   outline:1px solid #E892E9;
-} 
+}
