@@ -10,7 +10,7 @@
 - enable app
 - in FILEACTIONS MENU (3 dots to the right of the name, in file view) select PLAY
 enjoy]]></description>
-    <version>0.0.1</version>
+    <version>10.0.0</version>
     <licence>agpl</licence>
     <author mail="coa.develop@gmail.com" >Aleksandar Veljkoivic</author>
     <namespace>FolderPlayer</namespace>
