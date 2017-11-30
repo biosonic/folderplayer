@@ -1,3 +1,57 @@
-#hello {
-	color: red;
+#jp_container_folder-player {
+  padding-top: 8px;
+  z-index: 100;
+  float: right;
 }
+
+
+#jp_container_folder-player.minimal {
+  padding-bottom: 0;
+  width: auto;
+}
+#jp_container_folder-player.minimal .jp-type-playlist {
+  display: none;
+  padding-bottom: 0;
+}
+#jp_container_folder-player.minimal .players-top-bar {
+  padding-bottom: 9px;
+}
+
+
+.jp-playlist {
+  font-size: 20px;
+  max-height: 350px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.jp-playlist li > div {
+  margin-right: 10px;
+}
+.jp-playlist li > div .jp-artist {
+  display:block;
+}
+.players-top-bar {
+  padding-bottom: 14px;
+  text-align: right;
+}
+.players-top-bar a {
+  color: #E892E9;
+  text-decoration: none;
+
+  outline:1px solid #E892E9;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 6px;
+}
+.players-top-bar .title {
+  float: left;
+  display: inline-block;
+  font-size: 16px;
+}
+.players-top-bar a:focus {
+  outline:1px solid #E892E9;
+} 

@@ -1,0 +1,25 @@
+{
+  "name": "webDAV-audio-player",
+  "authors": [
+    "Aleksandar Veljkovic <coa.develop@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jPlayer": "jplayer#2.9.2"
+  },
+  "overrides": {
+    "jPlayer": {
+      "dependencies": []
+    }
+  }
+}
