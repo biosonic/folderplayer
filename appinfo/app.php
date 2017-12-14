@@ -9,6 +9,8 @@
  * @copyright Aleksandar Veljkovic 2016
  */
 
+\OCP\App::registerPersonal('folderplayer', 'personal');
+
 \OCP\Util::addStyle('folderplayer', '../js/bower_components/jPlayer/dist/skin/pink.flag/css/jplayer.pink.flag.min');  // include css/style.css for every app
 \OCP\Util::addStyle('folderplayer', 'style');  // include css/style.css for every app
 
