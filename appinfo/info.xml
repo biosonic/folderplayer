@@ -19,10 +19,4 @@ enjoy]]></description>
     <dependencies>
         <nextcloud min-version="12" max-version="12"/>
     </dependencies>
-    <navigations>
-        <navigation>
-            <name>Folder Player</name>
-            <route>folderplayer.page.index</route>
-        </navigation>
-    </navigations>
 </info>
