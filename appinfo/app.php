@@ -9,7 +9,7 @@
  * @copyright Aleksandar Veljkovic 2016
  */
 
-namespace OCA\Folderplayer\AppInfo;
+\OCP\App::registerPersonal('folderplayer', 'personal');
 
 \OCP\Util::addStyle('folderplayer', '../js/bower_components/jPlayer/dist/skin/pink.flag/css/jplayer.pink.flag.min');  // include css/style.css for every app
 \OCP\Util::addStyle('folderplayer', 'style');  // include css/style.css for every app
@@ -17,6 +17,3 @@ namespace OCA\Folderplayer\AppInfo;
 \OCP\Util::addScript('folderplayer', 'bower_components/jPlayer/dist/jplayer/jquery.jplayer.min');  // include js/script.js for every app
 \OCP\Util::addScript('folderplayer', 'bower_components/jPlayer/dist/add-on/jplayer.playlist.min');  // include js/script.js for every app
 \OCP\Util::addScript('folderplayer', 'script');  // include js/script.js for every app
-
-$app = new Application([]);
-$app->registerSettings();
