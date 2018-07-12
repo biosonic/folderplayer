@@ -5,6 +5,8 @@
  * This file is licensed under the Affero General Public License version 3 or
  * later. See the COPYING file.
  *
+ * @developer Lucian Last <li@last.nl>
+ * @copyright Lucian Last 2018
  * @author Aleksandar Veljkovic <coa.develop@gmail.com>
  * @copyright Aleksandar Veljkovic 2016
  */
