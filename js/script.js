@@ -103,7 +103,7 @@ $(function () {
         $("#jquery_jplayer_folder-player").jPlayer('destroy');
 
         $.ajax({
-        url: oc_webroot + "/remote.php/webdav" + url,
+        url: OC.webroot + "/remote.php/webdav" + url,
         method: "PROPFIND",
         headers: {
           "X-Requested-With": "cUrl",
@@ -116,7 +116,7 @@ $(function () {
             var src = o.innerHTML;
             var ext = src.split('.').pop();
             if (ext === "mp3") {
-              var regE = new RegExp("^" + oc_webroot.replace('/', '\/') + "\/remote.php\/webdav\/(.*)\/(.*)." + ext + "$", 'i');
+              var regE = new RegExp("^" + OC.webroot.replace('/', '\/') + "\/remote.php\/webdav\/(.*)\/(.*)." + ext + "$", 'i');
               var regM = src.match(regE);
               songs.push({
                 mp3: src,
